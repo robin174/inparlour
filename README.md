@@ -1,2 +1,2 @@
-# inparlour
+# InParlour
 InParlour WP Project: Theme
