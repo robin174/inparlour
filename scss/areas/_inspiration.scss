@@ -1,0 +1,9 @@
+.area--inspiration {
+	padding-bottom: $padding-small;
+}
+
+@include breakpoint(medium) {
+	.area--inspiration {
+		padding-bottom: $padding-general;
+	}
+}

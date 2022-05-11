@@ -1,0 +1,17 @@
+.area--testimonial {
+	background: url(../images/ip-pattern03.png) $color-secondary repeat;
+	padding: $padding-general 0;
+	text-align: center;
+}
+
+@include breakpoint(medium) {
+	.area--testimonial {
+		padding: $padding-general 0;
+	}
+}
+
+@include breakpoint(large) {
+	.area--testimonial {
+		padding: $padding-general * 1.5;
+	}
+}

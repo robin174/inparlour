@@ -1,0 +1,44 @@
+svg {
+	& #Summer {
+		fill: $color-primary;
+	}
+	& #Twitter {
+		fill: $color-secondary-dark;
+	}
+	& #Instagram {
+		fill: $color-secondary-dark;
+	}
+	& #Booking {
+		fill: $color-primary;
+	}
+	& #Logo {
+		fill: $color-secondary;
+	}
+}
+
+.button--icon {
+	svg {
+		& #Booking {
+			fill: $color-secondary;
+		}
+	}
+}
+
+.button--svg.social:hover {
+	svg {
+		& #Twitter {
+			fill: $color-secondary;
+		}
+		& #Instagram {
+			fill: $color-secondary;
+		}
+	}
+}
+
+.button--svg.social-tan {
+	svg {
+		& #Instagram {
+			fill: $color-secondary-ahl;
+		}
+	}
+}

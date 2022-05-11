@@ -1,0 +1,46 @@
+// Base values
+$base-value: 1em; // To test ems value as opposed to px
+$base-value-px: 16px; // To test base value with px - use on font-size and line-height
+
+// Margins & Paddings
+$margin-general: $base-value * 2;
+$margin-small: $base-value;
+$padding-general: $base-value * 2;
+$padding-small: $base-value;
+
+$letter-spacing: $base-value / 5;
+
+// Fonts
+$font-sans: 'Open Sans', sans-serif;
+$font-serif: 'adobe-garamond-pro', serif;
+
+$font-sans-2019: 'omnes-pro', sans-serif;
+$font-serif-2019: 'mrs-eaves', serif; 
+
+// Fonts - weight
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+
+// Color - IP
+$color-primary: #020D2F; // Navy Blue: rgba(2,13,47,1); 
+$color-secondary: #FDEBE4; // Pink: rgba(253,235,228,1);
+$color-tertiary: #E6E7EA; // Grey
+$color-cannes: #ed1c24; // Red rgb(237,28,36);
+
+// Color - IP (additional)
+$color-primary-dark: darken($color-primary,5%);
+$color-primary-50: rgba(5,14,47,0.5);
+$color-secondary-dark: darken($color-secondary,10%);
+$color-tertiary-dark: darken($color-tertiary,10%);
+$color-white-50: rgba(255,255,255,0.5);
+
+// Color - AHL
+$color-primary-ahl: #2e0013; // Burgundy: rgb(46,0,19);
+$color-secondary-ahl: #fff0de; // Nude: rgb(255,240,222);
+
+// Color - AHL (additional)
+$color-primary-ahl-dark: darken($color-primary-ahl,5%);
+$color-secondary-ahl-dark: darken($color-secondary-ahl, 5%);

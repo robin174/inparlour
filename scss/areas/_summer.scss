@@ -1,0 +1,11 @@
+.area--summer {
+	text-align: center;
+	background: $color-secondary repeat;
+	padding: $padding-general * 2;
+}
+
+@include breakpoint(medium) {
+	.area--summer {
+		padding: $padding-general;
+	}
+}

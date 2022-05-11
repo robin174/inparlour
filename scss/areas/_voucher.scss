@@ -1,0 +1,11 @@
+.area--voucher {
+	text-align: center;
+	background-color: $color-primary; // slight variation on ps file
+	padding: $padding-small/2 0;
+}
+
+@include breakpoint(medium) {
+	.area--voucher{
+		padding: $padding-small 0;
+	}
+}

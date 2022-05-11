@@ -1,0 +1,20 @@
+footer {
+	background: darken($color-primary, 5%);
+	padding-top: $padding-small * 1.5;
+	padding-bottom: $padding-small;
+	& a {
+		color: $color-secondary-dark;
+	}
+	& a:hover {
+		color: darken($color-secondary, 20%);
+	}
+	& p {
+		color: $color-white-50;
+		a {
+			color: $color-white-50;
+		}
+		a:hover {
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.area--treatments {
+	padding-bottom: $padding-small;
+}
+
+
+@include breakpoint(medium) {
+	.area--treatments {
+		padding-bottom: $padding-general;
+	}
+}

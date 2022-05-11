@@ -1,0 +1,53 @@
+.tweet {
+    margin-top: $margin-small;
+}
+
+.tweet h6 {
+    display: none;
+}
+
+.latest-tweets {
+    // Style tweet area
+    ul {
+        margin-top: 5px;
+        padding-left: 0;
+    } 
+    // Style tweet item
+    li { 
+        list-style-type: none;
+        margin-bottom: 15px;
+        // border-bottom: 1px solid $color-secondary-dark;
+    }
+    li:last-child {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    li p {
+    }
+    h3 {
+    }
+    // Style main tweet text
+    p.tweet-text { 
+        font-size: $base-value-px * 1.2; // 16px
+        line-height: $base-value-px * 1.4; // 19px
+        margin-bottom: 2px;
+    }
+    time {
+        font-size: 12px;
+    }
+    // Style links, hashtags and mentions
+    a {
+        color: $color-secondary-dark;
+    } 
+    a:hover { 
+        color: darken($color-secondary,20%);
+    }
+    // Style datetime and link under tweet
+    .tweet-details { 
+        opacity: 0.5;
+        font-size: $base-value-px;
+        font-weight: bold;
+        margin-bottom: 0;
+    } 
+}

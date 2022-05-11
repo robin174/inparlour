@@ -1,0 +1,25 @@
+.area--booking {
+	background: $color-secondary;
+	padding: $padding-small / 2;
+}
+
+.area--booking-cannes {
+	background: $color-cannes;
+	padding: $padding-general;
+}
+
+.area--typeform {
+	padding: $padding-small;
+}
+
+div#bookingForm.small.reveal {
+	border: none;
+	background: tint($color-primary, 95%);
+}
+
+
+@include breakpoint(medium) {
+	.area--booking {
+		padding: $padding-general $padding-general;
+	}
+}

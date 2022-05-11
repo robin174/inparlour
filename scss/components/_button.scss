@@ -1,0 +1,289 @@
+// NEW - Button: Outline
+
+.button--outline { // includes icon
+	@include transition-default;
+	font-family: $font-sans-2019;
+	border-style: solid;
+	border-width: 2px;
+	padding: 5px; 
+	font-weight: $font-medium;
+	font-size: 90%;
+	border-radius: 10px;
+}
+
+.button--svg {
+	@extend .button--outline;
+	display: inline-block;
+	position: relative;
+	line-height: 1em;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	svg {
+  		width: 1.8em;
+  		height: 1.8em;
+	}
+}
+
+span.button--icon, span.button--text {
+	display: block;
+	float: left;
+}
+
+span.button--icon {
+	margin: 0 -.4em 0 0;
+	padding: 0.6em 0 0.5em 1em;
+}
+
+span.button--text {
+	font-family: $font-sans-2019;
+	font-weight: $font-medium;
+	padding: .95em 1em .85em 1em;
+  	text-align: center;
+}
+
+// extend, AHL
+.button--head {
+	@extend .button--svg;
+	color: $color-secondary-ahl !important;
+	border-color: $color-secondary-ahl;
+	svg {
+		& #Instagram {
+			fill: $color-secondary-ahl;
+		}
+	}
+	&:hover {
+		color: $color-secondary-ahl !important;
+		background-color: rgba(255,255,255,0.1);
+	}
+}
+
+
+// extend, AHL
+body.inparlour-bridal {
+	.button--head {
+		@extend .button--svg;
+		color: $color-secondary !important;
+		border-color: $color-secondary;
+		svg {
+			& #Instagram {
+				fill: $color-secondary;
+			}
+		}
+		&:hover {
+			color: $color-secondary !important;
+			background-color: rgba(255,255,255,0.1);
+		}
+	}
+}
+
+// extend
+.button--social {
+	@extend .button--svg;
+	color: $color-secondary-dark;
+	border-color: $color-secondary-dark;
+	svg {
+		& #Instagram {
+			fill: $color-secondary-dark;
+		}
+	}
+	&:hover {
+		color: $color-secondary-dark;
+		background-color: rgba(255,255,255,0.1);
+	}
+}
+
+.button--booking {
+	margin-top: $margin-small;
+	background: $color-primary;
+	border: none;
+	color: #fff;
+	&:hover {
+		color: #fff;
+		background: $color-primary-dark;
+	}
+	.button--icon svg {
+		& #Booking {
+			fill: #fff;
+		}
+	}
+}
+
+@include breakpoint(large) {
+	.button--booking {
+		margin-top: 0;
+		.button--icon svg {
+			& #Booking {
+				fill: $color-primary;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+/*
+button, .button, .button--svg, .button--booking {
+	@include transition-default;
+	font-family: $font-sans;
+} 
+
+.button--svg {
+	@include buttonnew; // To sort
+	display: inline-block;
+	position: relative;
+	margin: 1.5em .25em 0 0;
+	padding: 3px 0;
+	line-height: 1em;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	svg {
+  		width: 1.8em;
+  		height: 1.8em;
+	}
+}
+
+span.button--icon, span.button--text {
+	display: block;
+	float: left;
+}
+
+span.button--icon {
+	margin: 0 -.4em 0 0;
+	padding: 0.6em 0 0.5em 1em;
+}
+
+span.button--text {
+	padding: .95em 1em .85em 1em;
+  	text-align: center;
+}
+*/
+
+
+
+
+/*
+.button--svg.booking {
+	background: $color-primary;
+	& span.button--icon {
+	}
+	& span.button--text {
+		color: #fff;
+	}
+	& span.button--text:hover {
+		color: darken($color-secondary, 20%);
+	}
+}
+
+
+
+.button--svg.social {
+	@include transition-default;
+	border: 2px solid $color-secondary-dark;
+	background: $color-primary;
+	color: $color-secondary;
+	& span.button--icon {
+	}
+	& span.button--text {
+		color: $color-secondary-dark;
+	}
+}
+
+.button--svg.social:hover {
+	border: 2px solid $color-secondary;
+	background: darken($color-primary,2%);
+	& span.button--text {
+		color: $color-secondary;
+
+	}
+}
+
+
+.button--svg.social-tan {
+	@include transition-default;
+	border: 2px solid $color-secondary-ahl;
+	color: $color-secondary-ahl;
+	margin-top: 10px;
+	& span.button--icon {
+		color: $color-secondary-ahl;
+	}
+	& span.button--text {
+		color: $color-secondary-ahl;
+	}
+}
+*/
+
+
+// Scroll to top button
+// Try with SVG? Default ot PNG.
+.topbutton {
+	height:50px;
+	width:50px;
+	position:fixed;
+	right:5px;
+	bottom:5px;
+	z-index:1;
+	background-image: url(../images/scrolltotop.png);
+	background-repeat:no-repeat;
+	display:none;
+}
+
+
+// OLD CODE - To Delete? Buttons on Treatment menu
+// button.social, .button.social {
+	// @include button;
+	// background: none;
+	// border: 2px solid $color-secondary;
+	// margin-top: $base-value * 2;
+// }
+
+// button.social:hover, .button.social:hover {
+	// box-shadow: 0 0 10px rgba(0,0,0,0.5);
+// }
+
+// button.form, .button.form {
+	// @include button;
+	// background: $color-primary;
+// }
+
+
+
+// TO SORT,
+// Button Animation: Pulse
+// http://www.paulund.co.uk/create-pulse-effect-with-css3-animation
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	30% { transform: scale(1); }
+	40% { transform: scale(1.08); }
+	50% { transform: scale(1.02); }
+	60% { transform: scale(1); }
+	70% { transform: scale(1.05); }
+	80% { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+
+.pulse {
+	animation-name: pulse_animation;
+	animation-duration: 5000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+// TO SORT
+// BUTTON: Treatment Select
+.button-group button {
+	@include button;
+	background: $color-primary;
+	margin-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}

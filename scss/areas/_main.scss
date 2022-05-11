@@ -1,0 +1,19 @@
+.area--main {
+	background-image: url(../images/ip-background.jpg);
+	background-color: rgba(255,255,255,0.8);
+	background-position: fixed;
+	background-size: cover;
+	padding: $padding-small;
+}
+
+@include breakpoint(medium) {
+	.area--main {
+		padding: $padding-small;
+	}
+}
+
+@include breakpoint(large) {
+	.area--main {
+		padding: $padding-general * 2;
+	}
+}

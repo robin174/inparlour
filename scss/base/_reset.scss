@@ -1,0 +1,27 @@
+figure {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+blockquote {
+	color: #000;
+	border: none;
+	padding: 0;
+	margin: 0;
+	& p {
+		margin-bottom: 0;
+	}
+}
+
+footer {
+	&.footer {
+		margin-top: 0;
+	}
+	& p {
+		margin-bottom: 0;
+	}
+}

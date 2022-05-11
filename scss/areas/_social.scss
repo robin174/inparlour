@@ -1,0 +1,43 @@
+.area--social{
+	background: $color-primary;
+	color: #fff;
+	padding: $padding-small;
+	h1, h2, h3, h4, h5, h6 {
+		color: $color-secondary;
+	}
+	h6 {
+		@include title-default;
+		font-weight: $font-bold;
+		font-size: 120%;
+		margin-bottom: $base-value * 1.5;
+	}
+	p {
+		color: #fff;
+	}
+	& a.button {
+		font-weight: $font-semi-bold;
+		color: $color-secondary;
+	}
+	& a.button:hover {}
+	[class*=unit--social] {
+		float: left;
+		display: block;
+		margin-bottom: $margin-small;
+	}
+}
+
+@include breakpoint(small) {
+	[class*=block--social] {
+		margin-bottom: $margin-general;
+	}
+}
+
+@include breakpoint(medium) {
+	.area--social{
+		padding-top: $padding-general * 2;
+		padding-bottom: $padding-general * 1.5;
+	}
+	[class*=block--social] {
+		margin-bottom: 0;
+	}
+}

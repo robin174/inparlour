@@ -1,0 +1,63 @@
+figure {
+	margin-top: 0;
+	margin-bottom: 2em;
+	figcaption {
+		margin-top: 0.5em;
+		font-size: 80%;
+		font-weight: $font-semi-bold;
+		color: $color-primary-50;
+	}
+	figcaption.highlight{
+		font-size: $base-value-px * 1.2; // This should be in typography
+		line-height: $base-value-px * 1.4;
+		color: $color-primary;
+	}
+}
+
+figure{
+	&.head--logo {
+		margin: 0;
+	}
+}
+
+figure {
+	&.grid--photo {
+		position: relative;
+	    margin: 0;
+	    padding: 0;
+		border: 0 solid #fff;
+		box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+		figcaption {
+			font-weight: $font-medium;
+			margin: 0;
+            padding: 0;
+            position: absolute;
+            text-align: right;
+            bottom: 10px;
+            right: 0;
+            z-index: 100;
+            color: #fff;
+            background-color: rgba(5,14,47,0.9);
+            padding: 3px 7px;
+		}
+	}
+}
+
+figure {
+	&.featured--treatment {
+		margin-left: $margin-general * 1.5;
+		margin-right: $margin-general * 1.5;
+		margin-bottom: $margin-small;
+		img {
+			border-radius: 50%;
+		}
+	}
+}
+
+figure.cover--press,figure.general {
+	img {
+		box-shadow: 0 0 5px rgba(0,0,0,0.25);
+		border: 5px solid #fff;
+	}
+}
+

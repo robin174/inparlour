@@ -1,0 +1,199 @@
+/* Common style */
+figure.effect-bubba {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	max-height: 175px!important; // need to sort responsive
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+figure.effect-bubba img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+figure.effect-bubba figcaption {
+	margin-top: 0;
+	padding: 1em;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+	pointer-events: none;
+}
+
+figure.effect-bubba figcaption,
+figure.effect-bubba figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+figure.effect-bubba figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+figure.effect-bubba h2 {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: $letter-spacing/2;
+	word-spacing: -0.15em;
+	font-weight: $font-regular;
+}
+
+figure.effect-bubba h2 span {
+	font-weight: 800;
+}
+
+figure.effect-bubba h2,
+figure.effect-bubba p {
+	color: $color-secondary;
+	margin: 0;
+	text-shadow: 0 0 5px $color-primary;
+}
+
+figure.effect-bubba p {
+	font-size: 85%;
+}
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+figure.effect-bubba {
+	background: $color-primary;
+}
+
+figure.effect-bubba img {
+	opacity: 0.5;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+	opacity: 0.3;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+	position: absolute;
+	top: $padding-small / 2;
+	right: $padding-small / 2;
+	bottom: $padding-small / 2;
+	left: $padding-small / 2;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+	border-top: 1px solid $color-secondary;
+	border-bottom: 1px solid $color-secondary;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+	border-right: 1px solid $color-secondary;
+	border-left: 1px solid $color-secondary;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+figure.effect-bubba h2 {
+	padding-top: 10%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+}
+
+figure.effect-bubba p {
+	padding: $padding-small / 2 2.5em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+@include breakpoint(medium) {
+	figure.effect-bubba figcaption::before,
+	figure.effect-bubba figcaption::after {
+		top: $padding-small;
+		right: $padding-small;
+		bottom: $padding-small;
+		left: $padding-small;
+	}
+	figure.effect-bubba figcaption::before {
+		border-top: 2px solid $color-secondary;
+		border-bottom: 2px solid $color-secondary;
+	}
+
+	figure.effect-bubba figcaption::after {
+		border-right: 2px solid $color-secondary;
+		border-left: 2px solid $color-secondary;
+	}
+	figure.effect-bubba figcaption {
+		padding:1.5em;
+	}
+	figure.effect-bubba {
+		max-height: 225px!important; // need to sort responsive
+	}
+	figure.effect-bubba h2 {
+		padding-top: 17%;
+		font-size: 1.5em;
+	}
+	figure.effect-bubba p {
+		font-size: 95%;
+	}
+}
+
+@include breakpoint(large) {
+	figure.effect-bubba figcaption {
+		padding:2em;
+	}
+	figure.effect-bubba {
+		max-height: 375px!important; // need to sort responsive
+	}
+	figure.effect-bubba h2 {
+		padding-top: 25%;
+		font-size: 2em;
+	}
+	figure.effect-bubba p {
+		font-size: 100%;
+	}
+}

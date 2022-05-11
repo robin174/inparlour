@@ -1,0 +1,69 @@
+// To integrate back into site
+.contouring { // class applied to the body of page design
+	h1, h2, h3, h4, h5, h6, li, p {
+		color: $color-primary;
+	}
+	.top-bar, .top-bar ul { // Header, Nav
+		background: $color-primary-dark;
+	}
+	.area--template {
+		& a { 
+			color: $color-primary;
+			@include transition-default;
+		}
+		& a:hover {
+			color: $color-primary-dark;
+			text-decoration: underline;
+		}
+	}
+	footer {
+		background: $color-primary-dark;
+		h3 {
+			color: $color-secondary;
+		}
+		p {
+			color: $color-secondary;
+		}
+		a { 
+			color: $color-secondary;
+			@include transition-default;
+		}
+		a:hover {
+			color: $color-secondary;
+			text-decoration: underline;
+		}
+	}
+	& figcaption.highlight {
+		color: $color-primary;
+	}
+	& .area--logo { // use extend here??
+		background-color: $color-primary;
+	}
+	& .area--testimonial { // use extend here??
+		background: url(../images/ip-pattern02.png) repeat;
+	}
+	& .area--display-press {
+		background-image: url(../images/ip-press-bg02.png);
+	}
+	& hr {
+		border-bottom: 1px solid $color-secondary; 
+	}
+}
+
+.head--animate {
+	@include fadeIn(
+		$duration: 1.2s,
+		$count: 1,
+		$delay: 1s,
+			$function: ease-in, 
+		$fill: both);
+}
+
+.button--animate {
+	@include fadeIn(
+		$duration: 1.2s,
+		$count: 1,
+		$delay: 2s,
+			$function: ease-in, 
+		$fill: both);
+}

@@ -1,0 +1,49 @@
+blockquote {
+	quotes: "“" "”" "‘" "’";
+	color: $color-primary;
+	padding-left: $padding-general;
+	padding-right: $padding-general;
+	& p {
+		color: $color-primary;
+		font-size: 1.6em;	
+		font-weight: $font-regular;
+		line-height: 1.2;
+		&::before {
+			content: open-quote;
+		}
+		&::after {
+			content: close-quote;
+		}
+	}
+	& p.blockquote--credit {
+		@include title-default;
+		font-family: $font-serif-2019;
+		font-size: 1.4em;
+		font-weight: $font-bold;
+		font-style: normal;
+		margin-top: 10px;
+		&::before {
+			content: none;
+		}
+		&::after {
+			content: none;
+		}
+	} 
+}
+
+.contouring {
+	blockquote {
+		color: $color-primary;
+		& p {
+			color: $color-primary;
+		}
+	}
+	blockquote.testimonial--special {
+		quotes: "“" "”" "‘" "’";
+		font-size: $base-value-px * 1.8; // 29px
+		line-height: $base-value-px * 1.8; // 29px
+		p {
+			font-size: $base-value-px * 1.2; // 19px
+		}
+	}
+}

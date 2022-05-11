@@ -1,0 +1,27 @@
+// Mixin: Default Transition eg. Link
+@mixin transition-default {
+	@include transition-property(all);
+  	@include transition-duration(0.3s);
+  	@include transition-timing-function(ease-in);
+}
+
+@mixin title-default {
+	text-transform: uppercase;
+	letter-spacing: $letter-spacing;
+}
+
+@mixin button {
+	font-weight: $font-semi-bold;
+	font-size: 90%;
+	margin: 0;
+	padding: $base-value $base-value * 2; 
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0,0,0,0);
+}
+
+@mixin buttonnew {
+	border: 2px solid $color-secondary-dark;
+	font-weight: $font-semi-bold;
+	font-size: 90%;
+	border-radius: 10px;
+}	

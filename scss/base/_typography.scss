@@ -1,0 +1,285 @@
+
+// ALL THE BELOW FEELS SUPER CONVOLUTED. Bundle the hs together...
+
+/******************************************/
+// SIZING
+/******************************************/
+
+
+h1 {
+
+}
+
+h2 {
+	&.title--key {
+		font-size: $base-value-px * 2.5; // 40px
+		line-height: $base-value-px * 3; // 48px
+		font-weight: $font-bold;
+	}
+}
+
+h3 {
+		font-size: $base-value-px * 2; // 32px
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+	font-weight: $font-regular;
+	font-size: $base-value-px * 1.25; // 20px
+	line-height: $base-value-px * 1.8; // 29px
+	&.intro { // Paragraph - Introduction
+		font-size: $base-value-px * 1.25; // 20px
+		line-height: $base-value-px * 1.8; // 29px
+		font-weight: $font-bold;
+	}
+}
+
+
+
+/******************************************/
+// GLOBAL
+/******************************************/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-serif-2019;
+	font-weight: $font-regular;
+	color: $color-primary;
+}
+
+p {
+	color: $color-primary;
+}
+
+/******************************************/
+// BASE / Manual Font size and Line-height, based on Look/feel of font
+/******************************************/
+
+h1 {
+}
+
+h2 {
+	&.treatment--head {
+		font-size: $base-value-px * 2;
+		text-transform: uppercase;
+		font-weight: $font-semi-bold;
+	}
+	&.standout {
+		font-size: 300%;
+		font-weight: $font-light;
+	}
+}
+
+h3 {
+	&.treatment--head {
+		font-size: $base-value-px * 1.2;
+		text-transform: uppercase;
+		font-weight: $font-semi-bold;
+		letter-spacing: $base-value / 10;
+	}
+}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p {
+	&.inspiration {
+		font-weight: $font-regular;
+		font-size: 1.2em;
+	}
+}
+
+ul {
+	&.bullet {
+		margin-left: $margin-general *2;
+		margin-bottom: $margin-small;
+		& li {
+			color: $color-primary;
+		}
+	}
+}
+
+li {}
+
+
+
+/******************************************/
+// BOOKING
+/******************************************/
+
+p {
+	&.intro--booking {
+		font-weight: $font-medium;
+		font-size: $base-value-px * 1.3; // 21px
+		line-height: 1.3;
+		margin-bottom: 7px;
+	}
+	&.intro--booking-em {
+		font-weight: $font-regular;
+		font-size: $base-value-px * 1.2; // 19px
+		line-height: 1.3;
+		margin-bottom: 0;
+	}
+}
+
+
+/******************************************/
+// CLASSES
+/******************************************/
+
+.title-center {
+	@include title-default;
+	text-align: center;
+}
+
+.white {
+	color: #fff;
+}
+
+
+/******************************************/
+// FOOTER
+/******************************************/
+
+h3 {
+	&.title--contact {
+		font-size: 1.4rem;
+		color: $color-secondary-dark;
+		font-weight: $font-regular;
+	}
+}
+
+p {
+	&.copyright {
+		font-weight: $font-regular;
+		font-size: 1rem;
+	}
+}
+
+
+/******************************************/
+// GRID
+/******************************************/
+
+p {}
+
+
+/******************************************/
+// PAGE: Homepage
+/******************************************/
+
+h2 {
+	&.window--home {
+		font-size: 2.2rem;
+		// more styles at vendor / _codrops.scss
+	}
+}
+
+h3 {
+	&.title--summer {
+		font-size: 120%;
+		@include title-default;
+		font-weight: $font-regular;
+		margin-bottom: $base-value *2;
+	}
+}
+
+h4 {
+	&.title--summer {
+		font-size: 150%;
+		font-weight: $font-light;
+	}
+}
+
+p {
+	&.intro--summer {
+		margin-top: 10px;
+		font-weight: $font-regular;
+	}
+	&.content--summer {
+		font-weight: $font-regular;
+	}
+}
+
+
+/******************************************/
+// TEMPLATE
+/******************************************/
+
+h1 {
+	&.signpost--page {
+		font-size: 1.3rem; // 1rem = 16/22px, 1.5rem = 24/33px, 2rem = 32/44px
+		margin:0 0 $margin-small 0;
+		@include title-default;
+		font-weight: $font-bold;
+	}
+}
+
+h2 {
+}
+
+h3 {
+	&.subheading {
+
+	}
+}
+
+
+
+/******************************************/
+// TREATMENTS
+/******************************************/
+
+p {
+	&.treatment--intro {
+		font-size: $base-value-px * 1.1; // 18px
+		line-height: $base-value-px * 1.6; // 26px
+	}
+	&.treatment--descr {
+		font-size: $base-value-px * 1.1; // 18px
+		line-height: $base-value-px * 1.6; // 26px
+	}
+	&.treatment--extra {
+		&::before {
+			content: 'NB. ';
+		}
+		font-size: $base-value-px; // 16px
+		line-height: $base-value-px * 1.2; // 16px
+		font-weight: $font-semi-bold;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+}
+
+span.temp--time, span.temp--price {
+	font-family: $font-sans-2019;
+	font-weight: $font-semi-bold;
+	color: $color-primary;
+}
+
+
+
+/******************************************/
+// TREATMENTS (small by default --- and then larger above)
+/******************************************/
+
+
+@include breakpoint(medium) {
+}
+
+@include breakpoint(large) {
+}
+

@@ -1,0 +1,65 @@
+.block--treatment {
+}
+
+.button-group {
+	margin-bottom: $margin-small;
+	button {
+		margin-right: 15px;
+		border-radius: 5px;
+	}
+}
+
+.parlour-at-home ul, .parlour-at-home li {
+	padding-left: 0;
+	padding-bottom: 0;
+}
+
+.parlour-at-home button.is-checked {
+	background: $color-primary;	
+}
+
+.element-item {
+	width: 100%;
+}
+
+.parlour-at-home .unit--treatment {
+	background: tint($color-primary, 95%);
+	padding: $padding-small;
+	margin-bottom: $margin-small;
+	h2 {
+		margin-bottom: 5px;
+	}
+	time {
+		margin-bottom: 10px; 
+	}
+	& .single--treatment {
+		background: tint($color-primary, 90%);
+		@include transition-default;
+		padding:$padding-small/2;
+		margin-bottom: 5px;
+	}
+}
+
+.parlour-at-home .unit--treatment:hover {
+}
+
+@include breakpoint(medium) {
+	.parlour-at-home .unit--treatment {
+		padding: $padding-general;
+		& .single--treatment {
+			padding:$padding-small;
+		}
+	}
+}
+
+@include breakpoint(large) {
+	.parlour-at-home .unit--treatment {
+		& .single--treatment:hover {
+			background: tint($color-primary, 85%);
+		}
+	}
+}
+
+
+
+

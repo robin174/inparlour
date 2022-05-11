@@ -1,0 +1,20 @@
+.area--head {
+	background: $color-primary;
+	padding: $padding-general;
+	text-align: center;
+}
+
+.area--head-image {
+	background: $color-primary;
+	padding: $padding-general;
+	text-align: center;
+}
+
+@include breakpoint(medium) {
+	.area--head {
+		padding: $padding-general * 2;
+	}
+	.area--head-image {
+		padding: $padding-general * 3;
+	}
+}

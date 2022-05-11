@@ -1,0 +1,17 @@
+@import "bourbon";
+
+body {
+	background: $color-tertiary;
+	font-family: $font-sans-2019;
+}
+
+.row {
+}
+
+a {
+	@include transition-default;
+}
+
+hr.dotted {
+	border: dotted 1px $color-primary;
+}

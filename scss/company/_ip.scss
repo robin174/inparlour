@@ -1,0 +1,16 @@
+// IP Specific Styling - Overall Variables set in helpers/_variables.scss
+
+// COLORS
+$color-primary: #000D31; // Navy Blue: rgb(5,14,47);
+$color-secondary: #FEE9E1; // Pink: rgb(254,233,225);
+$color-tertiary: #E6E7EA; // Grey: rgb(230,231,234);
+$color-cannes: #ed1c24; // Red rgb(237,28,36);
+
+// BASE VALIE
+$base-value: 1em; // To test ems value as opposed to px
+$base-value-px: 16px; // To test base value with px - use on font-size and line-height
+
+// FONT
+$font-sans: 'Open Sans', sans-serif;
+$font-serif: 'adobe-garamond-pro', serif;
+// $font-serif:'nimbus-roman',sans-serif;

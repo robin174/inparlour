@@ -1,0 +1,14 @@
+.area--template {
+	padding-top: $padding-general;
+	padding-bottom: $padding-general;
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@include breakpoint(medium) {
+	.area--template {
+		padding-top: $padding-general * 1.5;
+		padding-bottom: $padding-general * 1.5;
+	}
+}

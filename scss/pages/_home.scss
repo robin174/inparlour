@@ -1,0 +1,103 @@
+.slidecon {
+	height: 320px;
+	position: relative;
+	margin-bottom: $margin-small;
+}
+// Need to vary height as we work our way in.
+
+.slidecon a {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-color: transparent;
+}
+
+.slidetextbox {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.slidetextbox, .slidetext {
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+}
+
+.slidetext {
+	position: absolute;
+	top: 30%;
+	width: 100%;
+	z-index: 4;
+	text-align: center;
+}
+
+.slidetext h1.slidetitle {
+	color: $color-secondary-dark;
+	margin: 0 0 10px;
+	position: relative;
+	text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.slidetext p.slidecopy {
+	color: #fff;
+	line-height: 1.1;
+	max-width: 80%;
+	font-size: 26px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+}
+
+section.home-shadow  {
+	@include transition-default;
+	box-shadow: 0 0 10px rgba(0,0,0,0);
+}
+
+section.home-shadow:hover  {
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+@include breakpoint(medium) {
+	.slidetext {
+		top: 20%;
+	}
+}
+
+// action happens on hover
+@include breakpoint(large) {
+	.slidetext {
+		top: 55%;
+	}
+	.slidetextbox {
+		background-color: rgba(0, 0, 0, 0.75);
+	}
+	.slidecon a .slidetextbox, .slidecon a .slidetext   {
+		opacity: 0;	
+	}
+	.slidecon a:hover .slidetextbox {
+		opacity: 0.8;
+	}
+	.slidecon a:hover .slidetext {
+		opacity: 1;
+		transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+    }
+}

@@ -1,0 +1,11 @@
+.area--logo {
+	background: $color-primary;
+	padding: $padding-small; 
+	text-align: center;
+}
+
+@include breakpoint(medium) {
+	.area--logo {
+		padding: $padding-general;
+	}
+}
