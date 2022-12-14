@@ -135,6 +135,8 @@ get_header(); ?>
 	</div>
 </section>
 
+
+<?php /*
 <section class="area--voucher">
 	<div id="content">
 		<div class="row">
@@ -154,6 +156,7 @@ get_header(); ?>
 		</div><!-- end .row -->
 	</div>
 </section>
+*/?>
 
 <?php /*
 <section class="area--social">
