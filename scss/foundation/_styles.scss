@@ -1,11 +1,11 @@
 // Import custom mixins
-@import "../assets/scss/mixins";
+@import "../../assets/scss/mixins";
 
 // Import local Foundation overrides - Don't link to Bower version as it will be overwritten whenever updated
-@import "../assets/scss/settings";
+@import "../../assets/scss/settings";
 
 // Import foundation.scss from vendor files
-@import "../vendor/foundation-sites/scss/foundation";
+@import "../../vendor/foundation-sites/scss/foundation";
 
 // Import Motion-UI from vendor files
 // To test first

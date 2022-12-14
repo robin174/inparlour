@@ -6,7 +6,7 @@ get_header(); ?>
 
 <section class="area--logo">
 	<figure>
-		<img src="<?php echo get_template_directory_uri(); ?>/images/ip_logo_22-pink-v2.png" alt="InParlour - Logo">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/use-InParlour-logo_22-pink-new.png" alt="InParlour - Logo">
 	</figure>
 </section>
 
@@ -30,7 +30,7 @@ get_header(); ?>
 						    $the_query->the_post(); ?>
 							    <section class="home-shadow" style="background-image:url(<?php the_field('homepage_image');?>);background-position:center;background-size:contain;">
 									<figure style="background-color: rgba(0,0,0,0.3);">
-										<a href="https://www.inparlour.co.uk/inparlour-at-home/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-2022-ip-athome.png" alt="<?php the_title();?>"></a>
+										<a href="https://www.inparlour.co.uk/inparlour-at-home/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-InParlour-Logo22-AtHome.png" alt="<?php the_title();?>"></a>
 									</figure>
 								</section>
 							<?php endwhile; wp_reset_postdata(); ?>
@@ -42,7 +42,7 @@ get_header(); ?>
 						    $the_query->the_post(); ?>
 						    	<section class="home-shadow" style="background-image:url(<?php the_field('homepage_image');?>);background-position:center;background-size:contain;">
 									<figure style="background-color: rgba(0,0,0,0.3);">
-										<a href="https://www.inparlour.co.uk/inparlour-tanning/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-2022-ip-tanning.png" alt="<?php the_title();?>"></a>
+										<a href="https://www.inparlour.co.uk/inparlour-tanning/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-InParlour-Logo22-Tanning.png" alt="<?php the_title();?>"></a>
 									</figure>
 								</section>
 							<?php endwhile; wp_reset_postdata(); ?>
@@ -54,7 +54,7 @@ get_header(); ?>
 						    $the_query->the_post(); ?>
 							    <section class="home-shadow" style="background-image:url(<?php the_field('homepage_image');?>);background-position:center;background-size:contain;">
 									<figure style="background-color: rgba(0,0,0,0.3);">
-										<a href="https://www.inparlour.co.uk/inparlour-bridal/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-2022-ip-bridal.png" alt="<?php the_title();?>"></a>
+										<a href="https://www.inparlour.co.uk/inparlour-bridal/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-InParlour-Logo22-Bridal.png" alt="<?php the_title();?>"></a>
 									</figure>
 								</section>
 							<?php endwhile; wp_reset_postdata(); ?>
@@ -66,7 +66,7 @@ get_header(); ?>
 						    $the_query->the_post(); ?>
 						    	<section class="home-shadow" style="background-image:url(<?php the_field('homepage_image');?>);background-position:center;background-size:contain;">
 									<figure style="background-color: rgba(0,0,0,0.3);">
-										<a href="https://www.inparlour.co.uk/inparlour-creative/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-2022-ip-creative.png" alt="<?php the_title();?>"></a>
+										<a href="https://www.inparlour.co.uk/inparlour-creative/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-InParlour-Logo22-Creative.png" alt="<?php the_title();?>"></a>
 									</figure>
 								</section>
 							<?php endwhile; wp_reset_postdata(); ?>
@@ -85,7 +85,7 @@ get_header(); ?>
 						    $the_query->the_post(); ?>
 								<section style="background-image:url(<?php the_field('homepage_image');?>);background-position:center;background-size:contain;">
 									<figure style="background-color: rgba(0,0,0,0.3);">
-										<a href="https://www.inparlour.co.uk/inparlour-at-home/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-2022-ip-athome.png" alt="<?php the_title();?>"></a>
+										<a href="https://www.inparlour.co.uk/inparlour-at-home/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-InParlour-Logo22-AtHome.png" alt="<?php the_title();?>"></a>
 									</figure>
 								</section>
 							<?php endwhile; wp_reset_postdata(); ?>
@@ -97,7 +97,7 @@ get_header(); ?>
 						    $the_query->the_post(); ?>
 						    	<section style="background-image:url(<?php the_field('homepage_image');?>);background-position:center;background-size:contain;">
 									<figure style="background-color: rgba(0,0,0,0.3);">
-										<a href="https://www.inparlour.co.uk/inparlour-tanning/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-2022-ip-tanning.png" alt="<?php the_title();?>"></a>
+										<a href="https://www.inparlour.co.uk/inparlour-tanning/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-InParlour-Logo22-Tanning.png" alt="<?php the_title();?>"></a>
 									</figure>
 								</section>
 							<?php endwhile; wp_reset_postdata(); ?>
@@ -109,7 +109,7 @@ get_header(); ?>
 						    $the_query->the_post(); ?>
 						    	<section style="background-image:url(<?php the_field('homepage_image');?>);background-position:center;background-size:contain;">
 									<figure style="background-color: rgba(0,0,0,0.3);">
-										<a href="https://www.inparlour.co.uk/inparlour-bridal/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-2022-ip-bridal.png" alt="<?php the_title();?>"></a>
+										<a href="https://www.inparlour.co.uk/inparlour-bridal/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-InParlour-Logo22-Bridal.png" alt="<?php the_title();?>"></a>
 									</figure>
 								</section>
 							<?php endwhile; wp_reset_postdata(); ?>
@@ -121,7 +121,7 @@ get_header(); ?>
 						    $the_query->the_post(); ?>
 						    	<section style="background-image:url(<?php the_field('homepage_image');?>);background-position:center;background-size:contain;">
 									<figure style="background-color: rgba(0,0,0,0.3);">
-										<a href="https://www.inparlour.co.uk/inparlour-creative/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-2022-ip-creative.png" alt="<?php the_title();?>"></a>
+										<a href="https://www.inparlour.co.uk/inparlour-creative/" title="<?php the_title();?>"><img src="<?php echo get_template_directory_uri(); ?>/images/use-InParlour-Logo22-Creative.png" alt="<?php the_title();?>"></a>
 									</figure>
 								</section>
 							<?php endwhile; wp_reset_postdata(); ?>
