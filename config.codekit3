@@ -2749,6 +2749,18 @@
       "oAP" : "\/single.php",
       "oF" : 0
     },
+    "\/style-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/style-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/style.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -2847,6 +2859,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/grid.php",
+      "oF" : 0
+    },
+    "\/templates\/pricelist.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pricelist.php",
       "oF" : 0
     },
     "\/templates\/template.php" : {
@@ -6591,8 +6611,8 @@
   },
   "projectAttributes" : {
     "creationDate" : 673960657.36203301,
-    "displayValue" : "inparlour",
-    "displayValueWasSetByUser" : 0,
+    "displayValue" : "InParlour - Local",
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-pink",
     "iconImageWasSetByUser" : 1
   },

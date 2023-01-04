@@ -109,4 +109,14 @@ get_header(); ?>
 	</div><!-- end .row -->
 </section>
 
+<section class="area--pricelist" style="padding: 40px 0; background-color:#FDEBE4;">
+	<div class="row">
+		<div class="small-12 medium-10 medium-centered large-9 columns">
+			<section class="block--template">
+				<?php get_template_part('templates/pricelist'); ?>
+			</section>
+		</div>
+	</div><!-- end .row -->
+</section>
+
 <?php get_footer(); ?>
